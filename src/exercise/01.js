@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function Greeting({initializeName}) {
+function Greeting({initializeName = ''}) {
   const [name, setName] = React.useState(initializeName)
 
   function handleChange(event) {
